@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+
+# modelos e checkpoints de treino (grandes, não vão pro git)
+tinyllama-fiap/
+tinyllama-fiap-lora/
+*.zip
+*.safetensors
+*.bin
