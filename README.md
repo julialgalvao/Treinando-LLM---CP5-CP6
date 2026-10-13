@@ -12,19 +12,6 @@ Fine-tuning de uma LLM local com GPU para responder perguntas sobre a FIAP e con
 | Camilly Breitbach Ishida | RM551474 |
 | Julia Leite Galvão | RM550201 |
 
-## Checklist de requisitos
-
-| # | Requisito do enunciado | Status | Onde está |
-| --- | --- | :---: | --- |
-| 1 | Selecionar/escolher LLM | ✅ | `TinyLlama/TinyLlama-1.1B-Chat-v1.0` — `notebook_colab.ipynb` |
-| 2 | Escolher um problema específico | ✅ | Q&A sobre FIAP e conceitos de IA — `dataset/qa_fiap.jsonl` |
-| 3 | Testar diferentes parâmetros | ⬜ | `notebook_colab.ipynb` (seção 6) |
-| 4 | Verificar/avaliar o modelo (respostas) | ⬜ | `notebook_colab.ipynb` (seção 7 e 8) |
-| 5 | Fazer todos os testes utilizando GPU | ⬜ | GPU T4 (Google Colab) |
-| 6 | Criar frontend para o usuário inserir o prompt | ⬜ | `frontend/app.py` |
-| 7 | Print da GPU instalada e funcionando no VSCode | ⬜ | `docs/prints/` |
-| 8 | Documentação e código no GitHub | ⬜ | este repositório |
-
 ## Modelo e técnica
 
 - **Modelo base:** TinyLlama-1.1B-Chat-v1.0
@@ -37,7 +24,6 @@ Fine-tuning de uma LLM local com GPU para responder perguntas sobre a FIAP e con
 ```
 .
 ├── README.md
-├── cp                      # enunciado do checkpoint
 ├── notebook_colab.ipynb    # treinamento (Colab, GPU T4)
 ├── dataset/qa_fiap.jsonl
 ├── frontend/app.py         # interface Gradio
